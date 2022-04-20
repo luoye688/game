@@ -38,6 +38,7 @@ jobs:
           -v /database/cookies:/home/epic/database/cookies \
           -e EPΙC_EMAΙL \
           -e EPΙC_PASSWΟRD \
+          -e PUSHER_SERVERCHAN \
           ech0sec/awesome-epic:daddy python3 main.py claim
        
       #获取 Epic Store 所有未在库的免费游戏。一键操作，将免费商城搬空，科技改变生活！
@@ -47,7 +48,6 @@ jobs:
           -v /database/cookies:/home/epic/database/cookies \
           -e EPΙC_EMAΙL \
           -e EPΙC_PASSWΟRD \
-          -e PUSHER_SERVERCHAN \
           ech0sec/awesome-epic:daddy python3 main.py get
           
       #获取 Epic Store 所有未在库的免费DLC
