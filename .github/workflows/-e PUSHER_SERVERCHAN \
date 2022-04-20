@@ -1,9 +1,0 @@
-      #领取周免游戏
-      - name: Scaffold Claim
-        run: |
-          docker run --rm --pull always \
-          -v /database/cookies:/home/epic/database/cookies \
-          -e EPΙC_EMAΙL \
-          -e EPΙC_PASSWΟRD \
-          -e PUSHER_SERVERCHAN \
-          ech0sec/awesome-epic:daddy python3 main.py claim
