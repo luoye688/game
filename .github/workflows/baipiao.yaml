@@ -15,6 +15,8 @@ jobs:
    env:
       EPΙC_EMAΙL: ${{ secrets.EPIC_EMAIL }}
       EPΙC_PASSWΟRD: ${{ secrets.EPIC_PASSWORD }}
+      PUSHER_SERVERCHAN: ${{ secrets.PUSHER_SERVERCHAN }}
+
       
    runs-on: ubuntu-20.04
    steps:
@@ -45,6 +47,7 @@ jobs:
           -v /database/cookies:/home/epic/database/cookies \
           -e EPΙC_EMAΙL \
           -e EPΙC_PASSWΟRD \
+          -e PUSHER_SERVERCHAN \
           ech0sec/awesome-epic:daddy python3 main.py get
           
       #获取 Epic Store 所有未在库的免费DLC
